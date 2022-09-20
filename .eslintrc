@@ -1,0 +1,50 @@
+{
+	"root": true,
+	"extends": [
+		// "standard"
+	],
+	"parser": "@typescript-eslint/parser",
+	"overrides": [
+		{
+			"files": [ "*.ts", "*.tsx" ],
+			"extends": [
+				// "standard"
+			],
+			"parserOptions": {
+				"project": ["./tsconfig.json"]
+			}
+		}
+	],
+	"plugins": [
+		"react",
+		"standard",
+		"@typescript-eslint"
+	],
+	"rules": {
+			"@typescript-eslint/no-explicit-any": "error",
+			"@typescript-eslint/strict-boolean-expressions": [
+				2,
+				{
+					"allowString" : false,
+					"allowNumber" : false
+				}
+			],
+			"react/prop-types": 0,
+			// vars
+			"no-unused-vars": "off",
+			"@typescript-eslint/no-unused-vars": ["error"],
+			// enable additional rules
+			"indent": ["error", 4],
+			"linebreak-style": ["error", "unix"],
+			"quotes": [2, "single", { "avoidEscape": true }],
+			"semi": [2, "always"],
+
+			// override configuration set by extending "eslint:recommended"
+			"no-empty": "warn",
+			"no-cond-assign": ["error", "always"],
+
+			// disable rules from base configurations
+			"for-direction": "off"
+	},
+  "ignorePatterns": []
+}
