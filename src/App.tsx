@@ -96,8 +96,7 @@ function App() {
     };
 
     const onCreateTask = () => {
-        creatorSettings.showCreator = true;
-        setCreatorSettings({ ...creatorSettings });
+        setCreatorSettings({ showCreator: true });
     };
 
     const onClearAll = () => {
