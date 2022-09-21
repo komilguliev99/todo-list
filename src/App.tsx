@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './App.scss';
 import { Filter, Searchbar, Task, TaskCreator } from './components';
+import { BrowserRouter as Router } from 'react-router-dom';
+import './App.scss';
 
 const STORAGE_KEY = 'tasks';
 export interface ITask {
@@ -122,30 +123,32 @@ function App() {
     }
 
     return (
-        <div className="App">
-            { showCreator && <TaskCreator task={task} idx={idx} onSave={onSave} onDismiss={onDismiss} /> }
-            <div className="container">
-                <h2>Todo List</h2>
-                <div className="App__content">
-                    <Searchbar pattern={searchPattern} onChange={onSearch} />
-                    <Filter tags={filterTags} selected={filter} onChange={onFilterChange} />
+        <Router basename='/todo-list'>
+            <div className="App">
+                { showCreator && <TaskCreator task={task} idx={idx} onSave={onSave} onDismiss={onDismiss} /> }
+                <div className="container">
+                    <h2>Todo List</h2>
+                    <div className="App__content">
+                        <Searchbar pattern={searchPattern} onChange={onSearch} />
+                        <Filter tags={filterTags} selected={filter} onChange={onFilterChange} />
 
-                    <div className="App__task-container">
-                        { filteredTaks.map((item, index) => (
-                            <Task
-                                onChange={onChange}
-                                onRemove={onRemove}
-                                onEdit={onEdit}
-                                key={item.title}
-                                index={index}
-                                { ...item } />
-                        ))}
-                        <div className="App__add-btn" onClick={onCreateTask}>Add Task</div>
-                        <div className="App__clear-btn" onClick={onClearAll}>Clear All</div>
+                        <div className="App__task-container">
+                            { filteredTaks.map((item, index) => (
+                                <Task
+                                    onChange={onChange}
+                                    onRemove={onRemove}
+                                    onEdit={onEdit}
+                                    key={item.title}
+                                    index={index}
+                                    { ...item } />
+                            ))}
+                            <div className="App__add-btn" onClick={onCreateTask}>Add Task</div>
+                            <div className="App__clear-btn" onClick={onClearAll}>Clear All</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </Router>
     );
 }
 
