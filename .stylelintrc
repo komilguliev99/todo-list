@@ -16,6 +16,6 @@
     "indentation": 2,
     "color-no-invalid-hex": true,
     "max-line-length": 82,
-    "unit-allowed-list": ["em", "rem", "s", "%", "vmin", "vh", "deg", "px", "fr"]
+    "unit-allowed-list": ["em", "rem", "s", "%", "vmin", "vh", "vw", "deg", "px", "fr"]
   }
 }

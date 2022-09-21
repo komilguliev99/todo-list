@@ -1,0 +1,95 @@
+@import '../../scss/abstract';
+
+.TaskCreator {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .7);
+  z-index: 888;
+
+  &__form {
+    width: 40rem;
+    padding: 3rem;
+    background: #fff;
+    transform: scale(0);
+    animation: fadeout .3s ease forwards;
+
+    > h2 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      color: $color-main;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    > input,
+    > textarea {
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      border: 1px solid $color-main-3;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 1rem;
+      color: $color-grey-2;
+
+      &:focus {
+        border-color: $color-main-2;
+      }
+    }
+
+    > textarea {
+      resize: none;
+      height: 15rem;
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 2rem;
+
+    > label {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: $color-main-2;
+      margin-left: 1rem;
+    }
+  }
+
+  &__btn {
+    padding: 1rem 3rem;
+    background: $color-main;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

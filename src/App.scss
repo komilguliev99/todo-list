@@ -1,0 +1,60 @@
+@import './scss/abstract';
+
+.App {
+
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__task-container {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid $color-main;
+  }
+
+  &__add-btn,
+  &__clear-btn {
+    padding: 1rem 4rem;
+    background-color: $color-main;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: transform .3s ease, opacity .2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      opacity: .95;
+    }
+
+    &:active {
+      transform: translateY(-1px);
+    }
+  }
+
+  &__clear-btn {
+    background-color: $color-main-3;
+    color: $color-grey-1;
+    margin-left: 2rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+
+  > h2 {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: $color-grey-2;
+    margin-bottom: 3rem;
+  }
+}

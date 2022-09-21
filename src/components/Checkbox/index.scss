@@ -1,0 +1,21 @@
+@import '../../scss/abstract';
+
+.Checkbox {
+  cursor: pointer;
+  
+  > input {
+    display: none;
+  }
+
+  > div {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid $color-main-2;
+    display: flex;
+    align-items: center;
+
+    // > .Icon {
+    //   display: none;
+    // }
+  }
+}

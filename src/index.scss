@@ -1,10 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import '../node_modules/bootstrap-grid/dist/grid.css';
 
 html {
   font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {

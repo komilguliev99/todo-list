@@ -1,0 +1,80 @@
+@import '../../scss/abstract';
+
+.Task {
+  padding: 2rem;
+  background: $color-main-4;
+  position: relative;
+  overflow: hidden;
+
+  & + & {
+    margin-top: 1rem;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: $color-grey-1;
+    position: relative;
+    padding-right: 9rem;
+
+    &.fulfilled {
+      text-decoration: line-through;
+    }
+
+    > .Checkbox {
+      overflow: hidden;
+      display: inline-block;
+      max-width: 0;
+      transition: max-width .3s ease;
+    }
+  }
+
+  &:hover &__title > .Checkbox {
+    max-width: 5.5rem;
+  }
+
+  &__info {
+    padding-left: 4.5rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: $color-grey-2;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .4s ease, margin .4s ease, opacity .5s ease;
+  }
+
+  &:hover &__info {
+    margin-top: 1.5rem;
+    max-height: 10rem;
+    opacity: 1;
+  }
+
+  &__settings {
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    column-gap: 2rem;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity .3s ease;
+  }
+
+  &:hover &__settings {
+    opacity: 1;;
+  }
+
+  &__btn {
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
