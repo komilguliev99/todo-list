@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/todo/static/css/main.15dd4124.css",
+    "main.js": "/todo/static/js/main.96c45e0d.js",
+    "static/js/787.a5cad257.chunk.js": "/todo/static/js/787.a5cad257.chunk.js",
+    "static/media/protection.svg": "/todo/static/media/protection.06e93b117333ea6ba6e1.svg",
+    "static/media/shipping.svg": "/todo/static/media/shipping.d141d70e9037c80959e4.svg",
+    "static/media/top.svg": "/todo/static/media/top.27df57fe7fe3c8f34714.svg",
+    "static/media/support.svg": "/todo/static/media/support.ba0d9c175d9e4607bbd1.svg",
+    "static/media/edit.svg": "/todo/static/media/edit.a26b290039b58435e7cb.svg",
+    "static/media/cart.svg": "/todo/static/media/cart.cc347e41c1b33a90824f.svg",
+    "static/media/phone.svg": "/todo/static/media/phone.e70d7f34c482f7a5e9ed.svg",
+    "index.html": "/todo/index.html",
+    "static/media/share.svg": "/todo/static/media/share.6afe4738c223a800e458.svg",
+    "static/media/send.svg": "/todo/static/media/send.cbd70ac305a0ce3d55f7.svg",
+    "static/media/location.svg": "/todo/static/media/location.dcb3d597cc6762cef8b3.svg",
+    "static/media/chevron-right.svg": "/todo/static/media/chevron-right.4a0b970651b5193820f7.svg",
+    "static/media/close.svg": "/todo/static/media/close.fd41b66a7aaeb24a8f23.svg",
+    "static/media/trash.svg": "/todo/static/media/trash.b2085615e148a5281ae1.svg",
+    "static/media/search.svg": "/todo/static/media/search.8146bd3a3f6c21b012e1.svg",
+    "static/media/check.svg": "/todo/static/media/check.164ae5205a9cd13caf24.svg",
+    "static/media/heart.svg": "/todo/static/media/heart.f92fa021ce70d95b07f6.svg",
+    "static/media/arrow-right-primary.svg": "/todo/static/media/arrow-right-primary.ba57190cc99e8920f123.svg",
+    "static/media/arrow-right.svg": "/todo/static/media/arrow-right.0f9c63b1fed4a8a5c2c1.svg",
+    "static/media/heart_white.svg": "/todo/static/media/heart_white.3f71045e613326cdfd4c.svg",
+    "main.15dd4124.css.map": "/todo/static/css/main.15dd4124.css.map",
+    "main.96c45e0d.js.map": "/todo/static/js/main.96c45e0d.js.map",
+    "787.a5cad257.chunk.js.map": "/todo/static/js/787.a5cad257.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15dd4124.css",
+    "static/js/main.96c45e0d.js"
+  ]
+}
